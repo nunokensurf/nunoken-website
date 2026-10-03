@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/site.js" defer></script>
 </head>
-<body>
+<body class="product-page">
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="wordmark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken"></a>
+      <a class="wordmark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken" width="560" height="140"></a>
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="#features">機能</a><a href="#reports">分析</a><a href="#pricing">料金</a><a href="#data">データ保護</a>
       </nav>
@@ -36,16 +36,27 @@
             <p class="hero-lead">記録する。その場で見える。振り返って深める。ハンドボールの試合記録と分析を、ひとつのWindowsアプリで。</p>
             <div class="availability"><span class="status-dot" aria-hidden="true"></span><span>Microsoft Storeで公開予定</span><small>COMING SOON</small></div>
           </div>
-          <div class="court-visual reveal" aria-label="シュート分析をイメージしたハンドボールコート図">
-            <div class="court-toolbar"><span>SHOT MAP</span><span>HOME · 2ND HALF</span></div>
-            <div class="court">
-              <span class="goal"></span><span class="six-meter"></span><span class="nine-meter"></span>
-              <i class="shot goal-shot s1">7</i><i class="shot miss-shot s2">×</i><i class="shot goal-shot s3">9</i><i class="shot goal-shot s4">4</i><i class="shot miss-shot s5">×</i><i class="shot goal-shot s6">2</i>
-            </div>
-            <div class="court-stats"><div><strong>28</strong><small>GOALS</small></div><div><strong>43</strong><small>SHOTS</small></div><div><strong>65.1%</strong><small>RATE</small></div></div>
-          </div>
+          <figure class="app-window hero-app-window reveal">
+            <div class="app-window-bar"><span>HAND BALL ANALYZER</span><span>LIVE MATCH · DEMO DATA</span></div>
+            <img src="../assets/screenshots/01_match_recording_game7.png" alt="Handball Analyzerの試合記録画面。選手選択、シュート位置入力、LIVE KPIを一画面に表示" width="2190" height="1389">
+          </figure>
         </div>
         <div class="hero-facts"><span>FLUTTER FOR WINDOWS</span><span>REAL-TIME ANALYSIS</span><span>LOCAL DATA STORAGE</span></div>
+      </div>
+    </section>
+
+    <section class="video-section section-pad" aria-labelledby="video-title">
+      <div class="container video-grid">
+        <div class="video-copy">
+          <p class="section-index">PRODUCT IN MOTION</p>
+          <h2 id="video-title">試合中の操作を、<br>そのまま見る。</h2>
+          <p>記録からリアルタイム分析まで、実際の操作の流れを紹介する動画を掲載予定です。</p>
+          <span class="video-status">操作動画 · 準備中</span>
+        </div>
+        <div class="video-placeholder" role="img" aria-label="Handball Analyzer操作動画の掲載予定領域">
+          <span class="play-mark" aria-hidden="true">▶</span>
+          <div><strong>OPERATION VIDEO</strong><small>COMING SOON</small></div>
+        </div>
       </div>
     </section>
 
@@ -81,6 +92,51 @@
           <article class="report-card"><span class="tag">PLAYER</span><h3>Career Report</h3><p>選手個人の記録を試合をまたいで蓄積・分析。</p><div class="sparkline" aria-hidden="true"><svg viewBox="0 0 240 70"><path d="M0 58 L38 42 L72 49 L108 20 L144 35 L180 12 L240 22"/></svg></div></article>
           <article class="report-card"><span class="tag">TRANSITION</span><h3>TO → FASTBREAK</h3><p>ターンオーバーから速攻につながった展開を分析。</p><div class="flow-metric" aria-hidden="true"><b>TO</b><span>→</span><b>FB</b><span>→</span><b>GOAL</b></div></article>
           <article class="report-card"><span class="tag">GOALKEEPER</span><h3>GK分析</h3><p>シュート位置や結果から、GKのパフォーマンスを確認。</p><div class="donut" aria-hidden="true"><span>37<small>%</small></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad screenshot-section" aria-labelledby="screens-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-index">PRODUCT SCREENS</p><h2 id="screens-title">記録の先を、<br>画面で確かめる。</h2></div>
+          <p>試合中の状況から、チーム・選手の長期的な傾向、共有できるレポートまで、同じ記録を複数の視点で読み解けます。</p>
+        </div>
+
+        <div class="screen-story">
+          <article class="screen-feature">
+            <div class="screen-copy"><span>01 / REAL-TIME</span><h3>試合の変化を、その場で。</h3><p>スコアと主要KPIをまとめて確認し、前半・後半の変化や時間帯別の得点推移を追えます。</p></div>
+            <div class="screen-pair">
+              <figure><img src="../assets/screenshots/02_realtime_analysis_game7.png" alt="リアルタイム分析の概要画面" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Realtime overview</figcaption></figure>
+              <figure><img src="../assets/screenshots/03_timeline_analysis_game7.png" alt="時間帯別得点と前半後半比較の画面" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Timeline analysis</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="screen-feature">
+            <div class="screen-copy"><span>02 / TEAM REPORT</span><h3>チーム全体を、7ページで俯瞰。</h3><p>試合概要、シュート位置、守備・GK、診断などをレポートとして整理します。</p></div>
+            <div class="screen-gallery four-up">
+              <figure><img src="../assets/screenshots/04_team_report_overview_game6.png" alt="Team Reportの試合概要" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Match overview</figcaption></figure>
+              <figure><img src="../assets/screenshots/05_team_report_shot_map_game6.png" alt="Team Reportのシュートマップ" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Shot map</figcaption></figure>
+              <figure><img src="../assets/screenshots/06_team_report_defense_game6.png" alt="Team Reportの守備・ゴールキーパー分析" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Defense / Goalkeeper</figcaption></figure>
+              <figure><img src="../assets/screenshots/07_team_report_insights_game6.png" alt="Team Reportの診断画面" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Insights / Diagnosis</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="screen-feature">
+            <div class="screen-copy"><span>03 / CAREER REPORT</span><h3>選手ごとの積み重ねを分析。</h3><p>フィールドプレーヤーとGK、それぞれに適した指標とコース分析を表示します。</p></div>
+            <div class="screen-pair">
+              <figure><img src="../assets/screenshots/08_career_adrian_vale.png" alt="フィールドプレーヤーのCareer Report" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Field player</figcaption></figure>
+              <figure><img src="../assets/screenshots/09_career_mika_solven.png" alt="ゴールキーパーのCareer Report" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Goalkeeper</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="screen-feature">
+            <div class="screen-copy"><span>04 / PDF REPORT</span><h3>試合記録を、共有できる形に。</h3><p>選手記録と試合履歴をA4縦のPDF Previewで確認。PROではPDFファイルとして保存できます。</p></div>
+            <div class="screen-pair">
+              <figure><img src="../assets/screenshots/10_match_record_preview_game6_page1.png" alt="試合記録PDF Previewの1ページ目" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Match record · Page 1</figcaption></figure>
+              <figure><img src="../assets/screenshots/11_match_record_preview_game6_page2.png" alt="試合記録PDF Previewの2ページ目" width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Match record · Page 2</figcaption></figure>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -135,7 +191,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-main"><div><a class="wordmark footer-mark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken"></a><p>Sports analysis software.</p></div><div class="footer-product"><small>PRODUCT</small><a href="./">Handball Analyzer</a></div><div class="footer-future"><small>UPCOMING</small><span>Guide</span><span>Support</span><span>Privacy</span><span>Terms</span></div></div>
+    <div class="container footer-main"><div><a class="wordmark footer-mark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken" width="560" height="140"></a><p>Sports analysis software.</p></div><div class="footer-product"><small>PRODUCT</small><a href="./">Handball Analyzer</a></div><div class="footer-future"><small>UPCOMING</small><span>Guide</span><span>Support</span><span>Privacy</span><span>Terms</span></div></div>
     <div class="container footer-bottom"><span>© <span data-year>2026</span> nunoken</span><span>Made for the game.</span></div>
   </footer>
 </body>
