@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handball Analyzer — 試合記録・分析アプリ | nunoken</title>
+  <meta name="description" content="Handball Analyzerは、ハンドボールの試合記録、リアルタイム分析、チーム・個人・GK分析、PDFレポートに対応するWindowsアプリです。">
+  <meta name="theme-color" content="#111314">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="nunoken">
+  <meta property="og:title" content="Handball Analyzer — 試合記録・分析アプリ">
+  <meta property="og:description" content="記録する。その場で見える。次のプレーにつながる。Windows向けハンドボール分析アプリ。">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken"></a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#features">機能</a><a href="#reports">分析</a><a href="#pricing">料金</a><a href="#data">データ保護</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="product-hero section-dark" aria-labelledby="product-hero-title">
+      <div class="container">
+        <div class="product-kicker"><span>HANDBALL ANALYZER</span><span>FOR WINDOWS</span></div>
+        <div class="product-hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">MATCH RECORDING &amp; ANALYSIS</p>
+            <h1 id="product-hero-title">試合のすべてを、<br><span>次の判断へ。</span></h1>
+            <p class="hero-lead">記録する。その場で見える。振り返って深める。ハンドボールの試合記録と分析を、ひとつのWindowsアプリで。</p>
+            <div class="availability"><span class="status-dot" aria-hidden="true"></span><span>Microsoft Storeで公開予定</span><small>COMING SOON</small></div>
+          </div>
+          <div class="court-visual reveal" aria-label="シュート分析をイメージしたハンドボールコート図">
+            <div class="court-toolbar"><span>SHOT MAP</span><span>HOME · 2ND HALF</span></div>
+            <div class="court">
+              <span class="goal"></span><span class="six-meter"></span><span class="nine-meter"></span>
+              <i class="shot goal-shot s1">7</i><i class="shot miss-shot s2">×</i><i class="shot goal-shot s3">9</i><i class="shot goal-shot s4">4</i><i class="shot miss-shot s5">×</i><i class="shot goal-shot s6">2</i>
+            </div>
+            <div class="court-stats"><div><strong>28</strong><small>GOALS</small></div><div><strong>43</strong><small>SHOTS</small></div><div><strong>65.1%</strong><small>RATE</small></div></div>
+          </div>
+        </div>
+        <div class="hero-facts"><span>FLUTTER FOR WINDOWS</span><span>REAL-TIME ANALYSIS</span><span>LOCAL DATA STORAGE</span></div>
+      </div>
+    </section>
+
+    <section id="features" class="section-pad feature-section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-index">01 / RECORD</p><h2 id="features-title">迷わず記録。<br>あとから修正。</h2></div>
+          <p>試合の流れを止めずに入力できるイベント設計。入力ミスはUndoで戻せ、試合終了後も履歴を編集できます。</p>
+        </div>
+        <div class="event-grid" aria-label="記録できるイベント">
+          <article class="event-card accent"><span class="event-key">S</span><h3>SHOT</h3><p>選手、位置、結果を記録</p></article>
+          <article class="event-card"><span class="event-key">T</span><h3>TO</h3><p>ターンオーバーを分類</p></article>
+          <article class="event-card"><span class="event-key">G</span><h3>GK</h3><p>被シュートとセーブ</p></article>
+          <article class="event-card"><span class="event-key">2'</span><h3>退場</h3><p>2分間退場を記録</p></article>
+          <article class="event-card"><span class="event-key">↶</span><h3>Undo</h3><p>直前の入力を取り消し</p></article>
+          <article class="event-card"><span class="event-key">✎</span><h3>履歴編集</h3><p>試合終了後も修正可能</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reports" class="section-pad report-section" aria-labelledby="reports-title">
+      <div class="container">
+        <div class="section-heading inverse">
+          <div><p class="section-index light">02 / ANALYZE</p><h2 id="reports-title">試合中も、<br>シーズンを通しても。</h2></div>
+          <p>リアルタイムの状況把握から、積み上げた試合の傾向まで。チームと個人、GKをそれぞれの視点で分析します。</p>
+        </div>
+        <div class="report-grid">
+          <article class="report-card report-wide">
+            <div><span class="tag">REAL-TIME</span><h3>時間帯別得点</h3><p>得点の推移と流れを時間軸で確認。試合中の変化を読み取れます。</p></div>
+            <div class="bar-chart" aria-hidden="true"><i style="--h:35%"></i><i style="--h:58%"></i><i style="--h:46%"></i><i style="--h:78%"></i><i style="--h:64%"></i><i style="--h:90%"></i><i style="--h:72%"></i><i style="--h:100%"></i></div>
+          </article>
+          <article class="report-card"><span class="tag">TEAM</span><h3>Team Report</h3><p>チーム全体の攻守を集計し、試合の特徴を俯瞰。</p><strong class="report-number">64.2<small>%</small></strong></article>
+          <article class="report-card"><span class="tag">PLAYER</span><h3>Career Report</h3><p>選手個人の記録を試合をまたいで蓄積・分析。</p><div class="sparkline" aria-hidden="true"><svg viewBox="0 0 240 70"><path d="M0 58 L38 42 L72 49 L108 20 L144 35 L180 12 L240 22"/></svg></div></article>
+          <article class="report-card"><span class="tag">TRANSITION</span><h3>TO → FASTBREAK</h3><p>ターンオーバーから速攻につながった展開を分析。</p><div class="flow-metric" aria-hidden="true"><b>TO</b><span>→</span><b>FB</b><span>→</span><b>GOAL</b></div></article>
+          <article class="report-card"><span class="tag">GOALKEEPER</span><h3>GK分析</h3><p>シュート位置や結果から、GKのパフォーマンスを確認。</p><div class="donut" aria-hidden="true"><span>37<small>%</small></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad workflow-section" aria-labelledby="workflow-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-index">03 / REVIEW</p><h2 id="workflow-title">記録を、持ち出せる形に。</h2></div><p>試合記録レポートをPDFで確認。データはBackup / Restoreで引き継げます。</p></div>
+        <div class="workflow-grid">
+          <article><span>01</span><div><h3>試合を記録</h3><p>プレーごとのイベントをリアルタイム入力。</p></div></article>
+          <article><span>02</span><div><h3>レポートを確認</h3><p>試合・チーム・個人の結果を画面で分析。</p></div></article>
+          <article><span>03</span><div><h3>PDFに保存</h3><p>PROでは試合記録レポートをPDFファイルとして保存。</p></div></article>
+          <article><span>04</span><div><h3>Backup / Restore</h3><p>データのバックアップ作成と復元に対応。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-pad pricing-section" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-index">04 / PLANS</p><h2 id="pricing-title">すべての分析を、<br>FREEから。</h2></div><p>FREEでもリアルタイム分析、Team Report、Career Reportを含むすべての分析機能を利用できます。</p></div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="plan-head"><div><span class="plan-name">FREE</span><p>まず1試合を、すべての機能で。</p></div><div class="price"><strong>¥0</strong></div></div>
+            <ul><li>保存できる試合は1試合</li><li>すべての分析機能</li><li>PDF Preview</li><li class="muted">PDFファイル保存は対象外</li></ul>
+            <span class="coming-soon">Microsoft Storeで公開予定</span>
+          </article>
+          <article class="price-card featured">
+            <div class="recommended">FULL ACCESS</div>
+            <div class="plan-head"><div><span class="plan-name">PRO</span><p>試合数を気にせず、継続的に分析。</p></div><div class="price"><strong>¥3,980</strong><small>/ 月</small></div></div>
+            <ul><li>試合保存数 無制限</li><li>すべての分析機能</li><li>PDF Preview</li><li>PDFファイル保存</li></ul>
+            <span class="coming-soon light-button">月額Subscription · Coming soon</span>
+          </article>
+        </div>
+        <p class="pricing-note">PROはMicrosoft Storeの月額Subscriptionとして販売予定です。現在は販売を開始していません。</p>
+      </div>
+    </section>
+
+    <section id="data" class="section-pad data-section section-dark" aria-labelledby="data-title">
+      <div class="container data-grid">
+        <div><p class="section-index light">05 / YOUR DATA</p><h2 id="data-title">データは、<br>あなたのPCに。</h2><p class="data-lead">試合・チーム・選手データは、基本的にユーザーのPC内へ保存する設計です。</p></div>
+        <dl class="data-list">
+          <div><dt>LOCAL STORAGE</dt><dd>試合・チーム・選手データをPC内に保存</dd></div>
+          <div><dt>BACKUP / RESTORE</dt><dd>バックアップの作成と復元に対応</dd></div>
+          <div><dt>NO AI TRANSFER</dt><dd>AIへの試合・選手データ送信なし</dd></div>
+          <div><dt>v1.0.0</dt><dd>利用統計・クラッシュ情報の自動収集なし</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad" aria-labelledby="cta-title">
+      <div class="container"><p class="eyebrow eyebrow-dark">HANDBALL ANALYZER</p><h2 id="cta-title">ゲームを記録する。<br>チームを理解する。</h2><div class="availability dark-status"><span class="status-dot" aria-hidden="true"></span><span>Microsoft Storeで公開予定</span><small>COMING SOON</small></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><div><a class="wordmark footer-mark" href="../" aria-label="nunoken ホーム"><img src="../brand/nunoken-logo-reverse.svg" alt="nunoken"></a><p>Sports analysis software.</p></div><div class="footer-product"><small>PRODUCT</small><a href="./">Handball Analyzer</a></div><div class="footer-future"><small>UPCOMING</small><span>Guide</span><span>Support</span><span>Privacy</span><span>Terms</span></div></div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> nunoken</span><span>Made for the game.</span></div>
+  </footer>
+</body>
+</html>

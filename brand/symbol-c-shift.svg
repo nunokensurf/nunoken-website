@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">nunoken Shift symbol</title><desc id="desc">Three offset forward tracks converging toward one direction.</desc>
+  <path d="M21 112L61 72L92 103L139 56" fill="none" stroke="#111314" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M21 77L52 46L78 72" fill="none" stroke="#111314" stroke-width="11" stroke-linecap="square"/>
+  <path d="M101 45H139V83" fill="none" stroke="#c8ff2e" stroke-width="14" stroke-linecap="square"/>
+</svg>

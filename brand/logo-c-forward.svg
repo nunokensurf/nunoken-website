@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 190" role="img" aria-labelledby="title desc">
+  <title id="title">nunoken logo concept C Forward</title>
+  <desc id="desc">A forward leaning lowercase nunoken wordmark with an angular lime period.</desc>
+  <g transform="translate(0 0) skewX(-7)">
+    <text x="35" y="139" fill="#111314" font-family="Arial, Helvetica, sans-serif" font-size="130" font-weight="800" letter-spacing="-10">nunoken</text>
+  </g>
+  <path d="M592 109H627L613 139H578Z" fill="#c8ff2e"/>
+</svg>

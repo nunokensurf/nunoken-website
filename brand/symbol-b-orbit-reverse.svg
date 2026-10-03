@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">nunoken Orbit symbol reversed</title><desc id="desc">White and lime Orbit symbol for dark backgrounds.</desc>
+  <path d="M119 39A57 57 0 1 0 136 80" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M103 57A32 32 0 1 0 111 91" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="136" cy="80" r="10" fill="#c8ff2e"/><circle cx="80" cy="80" r="8" fill="#ffffff"/>
+</svg>
