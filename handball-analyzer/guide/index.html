@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handball Analyzer 操作ガイド | nunoken</title>
+  <meta name="description" content="Handball Analyzerの基本設定、試合記録、リアルタイム分析、Team Report、Career Report、Backup / Restoreまでを解説する公式操作ガイド。">
+  <meta name="theme-color" content="#111314">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="nunoken">
+  <meta property="og:title" content="Handball Analyzer 操作ガイド">
+  <meta property="og:description" content="基本設定から試合記録、各種レポート、Backup / Restoreまでを順番に確認できる公式操作ガイド。">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/guide.css">
+  <script src="../../assets/site.js" defer></script>
+</head>
+<body class="guide-page" id="top">
+  <a class="skip-link" href="#guide-main">本文へ移動</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="wordmark" href="../../" aria-label="nunoken ホーム"><img src="../../brand/nunoken-logo-reverse.svg" alt="nunoken" width="560" height="140"></a>
+    <nav class="site-nav" aria-label="メインナビゲーション"><a href="../">製品</a><a href="./" aria-current="page">操作ガイド</a><span class="nav-future">サポート <small>準備中</small></span></nav>
+  </div></header>
+
+  <main id="guide-main">
+    <section class="guide-hero section-dark" aria-labelledby="guide-title"><div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト"><a href="../../">nunoken</a><span>/</span><a href="../">Handball Analyzer</a><span>/</span><span aria-current="page">操作ガイド</span></nav>
+      <p class="eyebrow">OFFICIAL USER GUIDE · JAPANESE</p>
+      <h1 id="guide-title">Handball Analyzer<br><span>操作ガイド</span></h1>
+      <p>初めて使う準備から、試合入力、分析、レポート、Backup / Restoreまで。実際に行う順番に沿って確認できます。</p>
+      <div class="guide-status"><span>日本語版</span><span>画像は順次追加予定</span><span>Windows application</span></div>
+    </div></section>
+
+    <div class="container guide-layout">
+      <aside class="guide-sidebar" aria-label="操作ガイド目次"><p>CONTENTS</p><nav><ol>
+        <li><a href="#chapter-01"><span>01</span>はじめに</a></li><li><a href="#chapter-02"><span>02</span>初めて使うとき</a></li><li><a href="#chapter-03"><span>03</span>新しい試合を始める</a></li><li><a href="#chapter-04"><span>04</span>試合を記録する</a></li><li><a href="#chapter-05"><span>05</span>リアルタイム分析</a></li><li><a href="#chapter-06"><span>06</span>入力を間違えたとき</a></li><li><a href="#chapter-07"><span>07</span>試合を終了する</a></li><li><a href="#chapter-08"><span>08</span>Team Report</a></li><li><a href="#chapter-09"><span>09</span>Career Report</a></li><li><a href="#chapter-10"><span>10</span>試合記録レポート</a></li><li><a href="#chapter-11"><span>11</span>Backup / Restore</a></li><li><a href="#chapter-12"><span>12</span>FREE / PRO</a></li><li><a href="#chapter-13"><span>13</span>困ったとき</a></li>
+      </ol></nav></aside>
+
+      <div class="guide-content">
+        <section class="guide-chapter" id="chapter-01" aria-labelledby="c01"><header><p>01 / INTRODUCTION</p><h2 id="c01">はじめに</h2></header>
+          <p class="chapter-lead">Handball Analyzerは、試合中の出来事を記録し、その場の状況把握と試合後の分析につなげるWindows向けハンドボール試合記録・分析ソフトです。</p>
+          <div class="guide-cards three-up"><article><span>RECORD</span><h3>試合を記録</h3><p>選手、シュート位置・コース、結果、TO、GK記録などを入力します。</p></article><article><span>ANALYZE</span><h3>その場で分析</h3><p>スコア、SHOT%、TO%、GK SAVE%、時間帯別得点などを確認します。</p></article><article><span>REVIEW</span><h3>試合後に振り返る</h3><p>Team Report、Career Report、試合記録レポートで読み解きます。</p></article></div>
+          <div class="guide-note"><strong>このガイドについて</strong><p>確認できている内容を中心に説明します。ボタン位置など未確認の操作は、推測せず確認待ちと明記しています。</p></div>
+          <h3>FREE / PRO</h3><p>FREEでも分析機能を利用できます。主な違いは保存できる試合数とPDFファイル保存です。詳しくは<a href="#chapter-12">12 FREE / PRO</a>を確認してください。</p>
+          <h3>基本的な画面構成</h3><ul class="guide-list"><li>上部：スコア、試合時間、前半・後半、試合操作</li><li>左側：自チーム／相手の切り替えと選手選択</li><li>中央：SHOT POSITION、COURSE、攻撃種類、プレー結果</li><li>右側：LIVE KPIとGK情報</li><li>下部：TO、守備、タイムアウト、警告、退場、失格、7人攻撃、履歴編集など</li></ul>
+          <figure class="guide-media-slot" data-planned-image="getting-started/basic-layout.png" hidden><!-- 追加時はaltを設定してhiddenを外す --></figure>
+          <nav class="chapter-nav" aria-label="章ナビゲーション"><span></span><a href="#chapter-02">次へ：初めて使うとき →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-02" aria-labelledby="c02"><header><p>02 / GETTING STARTED</p><h2 id="c02">初めて使うとき</h2></header>
+          <p class="chapter-lead">試合の前に、自チーム、選手、対戦相手を準備します。選手は継続的なCareer Reportの基礎になります。</p>
+          <ol class="step-list"><li><span>STEP 1</span><div><h3>チームを登録する</h3><p>自チームとして使用するチーム情報を準備します。登録画面の入口と必須項目は実操作確認後に追記します。</p></div></li><li><span>STEP 2</span><div><h3>選手を登録する</h3><p>選手はcanonical player identityで管理されます。同一人物を名前・背番号だけで推測統合しないでください。</p></div></li><li><span>STEP 3</span><div><h3>背番号・ポジションを設定する</h3><p>各選手に背番号とポジションを設定します。変更手順は確認後に追記します。</p></div></li><li><span>STEP 4</span><div><h3>対戦相手を準備する</h3><p>試合作成で使用する対戦相手を準備します。選手登録範囲と編集方法は確認待ちです。</p></div></li></ol>
+          <div class="guide-note pending"><strong>詳細確認待ち</strong><p>正式なボタン名、必須項目、保存操作はスクリーンショットと最新アプリの確認後に追加します。</p></div>
+          <figure class="guide-media-slot" data-planned-image="getting-started/team-and-player-setup.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-01">← 前へ</a><a href="#chapter-03">次へ：新しい試合 →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-03" aria-labelledby="c03"><header><p>03 / MATCH SETUP</p><h2 id="c03">新しい試合を始める</h2></header>
+          <p class="chapter-lead">新しい試合を作成し、試合情報、出場メンバー、先発、GKを設定して記録を開始します。</p>
+          <ol class="step-list compact"><li><span>STEP 1</span><div><h3>新しい試合を作成</h3><p>試合作成画面への正式な移動経路は確認後に追記します。</p></div></li><li><span>STEP 2</span><div><h3>大会名・会場等を入力</h3><p>試合情報とHOME / AWAYを設定します。必須・任意項目は確認待ちです。</p></div></li><li><span>STEP 3</span><div><h3>メンバーを設定</h3><p>出場メンバー、先発、GKを設定します。</p></div></li><li><span>STEP 4</span><div><h3>試合を開始</h3><p>設定内容を確認して記録を開始します。開始操作は確認後に追記します。</p></div></li></ol>
+          <div class="guide-tip"><strong>開始前に確認</strong><p>HOME / AWAY、出場メンバー、先発、GKは試合中の入力とレポートに関係します。</p></div>
+          <figure class="guide-media-slot" data-planned-image="match-setup/new-match.png" hidden></figure><figure class="guide-media-slot" data-planned-image="match-setup/lineup-and-gk.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-02">← 前へ</a><a href="#chapter-04">次へ：試合を記録 →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-04" aria-labelledby="c04"><header><p>04 / MATCH INPUT</p><h2 id="c04">試合を記録する</h2></header>
+          <p class="chapter-lead">試合時計と対象選手を確認し、プレーの種類に応じて必要な情報を順番に入力します。</p>
+          <div class="record-flow"><span>選手</span><i>→</i><span>SHOT POSITION</span><i>→</i><span>SHOT TYPE</span><i>→</i><span>COURSE</span><i>→</i><span>結果</span></div>
+          <h3>SHOT</h3><ol class="step-list compact"><li><span>STEP 1</span><div><h4>選手を選択</h4><p>自チーム／相手を確認し、シュートした選手を選びます。</p></div></li><li><span>STEP 2</span><div><h4>位置・種類・コース</h4><p>SHOT POSITION、SHOT TYPE、COURSEを入力します。COURSEはシューターから見た方向です。</p></div></li><li><span>STEP 3</span><div><h4>結果</h4><p>GOAL、GK SAVE、BLOCK、枠外を選びます。BLOCKはCOURSEなしでも保存できます。</p></div></li></ol>
+          <div class="guide-warning"><strong>入力制約</strong><p>退場中の選手には新しいSHOT / TOを入力できません。</p></div>
+          <h3>その他の記録</h3><div class="term-grid"><article><strong>TO</strong><p>ターンオーバーを記録。分類と確定手順は確認待ち。</p></article><article><strong>退場・警告</strong><p>対象チーム・選手を確認して記録。</p></article><article><strong>タイムアウト</strong><p>自チーム／相手を確認して記録。</p></article><article><strong>7人攻撃</strong><p>開始・終了の正式操作は確認待ち。</p></article><article><strong>GK変更</strong><p>出場GKの切り替え手順は確認待ち。</p></article><article><strong>Undo</strong><p>直前の入力を取り消します。</p></article></div>
+          <p class="retired-feature">DF崩し方機能と得点差推移は廃止済みのため、このガイドでは扱いません。</p>
+          <figure class="guide-media-slot" data-planned-image="match-input/player-selection.png" hidden></figure><figure class="guide-media-slot" data-planned-image="match-input/shot-position-type-course.png" hidden></figure><figure class="guide-media-slot" data-planned-image="match-input/result-buttons.png" hidden></figure><figure class="guide-media-slot" data-planned-image="match-input/other-events.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-03">← 前へ</a><a href="#chapter-05">次へ：リアルタイム分析 →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-05" aria-labelledby="c05"><header><p>05 / LIVE ANALYSIS</p><h2 id="c05">リアルタイム分析</h2></header>
+          <p class="chapter-lead">概要、攻撃、守備 / GK、選手、時間帯を、前半 / 後半 / TOTALとHOME / AWAYで切り替えて確認します。</p>
+          <div class="analysis-tabs"><span>概要</span><span>攻撃</span><span>守備 / GK</span><span>選手</span><span>時間帯</span></div>
+          <ul class="guide-list"><li>概要：スコアと主要KPI、前半から後半への変化</li><li>攻撃：シュートと攻撃の集計</li><li>守備 / GK：守備とGKの集計</li><li>選手：選手別記録</li><li>時間帯：1分単位、前半 / 後半を区別し、0得点時間帯も保持</li></ul>
+          <div class="guide-note"><strong>操作確認待ち</strong><p>分析画面を開く正式な経路と、各タブ固有の操作は実操作確認後に追加します。</p></div>
+          <figure class="guide-media-slot" data-planned-image="live-analysis/overview.png" hidden></figure><figure class="guide-media-slot" data-planned-image="live-analysis/timeline-filters.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-04">← 前へ</a><a href="#chapter-06">次へ：入力修正 →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-06" aria-labelledby="c06"><header><p>06 / EDIT HISTORY</p><h2 id="c06">入力を間違えたとき</h2></header>
+          <p class="chapter-lead">直前の入力はUndo、過去の入力は履歴編集から修正します。試合終了後も編集できます。</p>
+          <div class="decision-grid"><article><span>直前</span><h3>Undo</h3><p>直前に確定した記録を取り消します。</p></article><article><span>過去・終了後</span><h3>履歴を編集</h3><p>SHOT、TO、選手、GK関連記録の対象履歴を確認して修正します。</p></article></div>
+          <div class="guide-warning"><strong>修正後の確認</strong><p>修正はスコア、集計、GK記録、レポートに関係します。具体的な編集項目と確定手順は実操作確認後に追記します。</p></div>
+          <figure class="guide-media-slot" data-planned-image="match-input/history-edit.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-05">← 前へ</a><a href="#chapter-07">次へ：試合終了 →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-07" aria-labelledby="c07"><header><p>07 / FINISH MATCH</p><h2 id="c07">試合を終了する</h2></header>
+          <p class="chapter-lead">前半終了、後半開始、試合終了の順に進行します。各操作の前に試合時間とスコアを確認します。</p>
+          <ol class="step-list compact"><li><span>STEP 1</span><div><h3>前半終了</h3><p>前半の記録を終了。時計の扱いは確認待ちです。</p></div></li><li><span>STEP 2</span><div><h3>後半開始</h3><p>後半を開始し、前半と区別して記録します。</p></div></li><li><span>STEP 3</span><div><h3>試合終了</h3><p>最終スコアと記録を確認して終了します。</p></div></li><li><span>STEP 4</span><div><h3>結果確認・修正</h3><p>試合結果画面を確認し、必要なら終了済み試合の履歴を編集します。</p></div></li></ol>
+          <figure class="guide-media-slot" data-planned-image="match-input/finish-match.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-06">← 前へ</a><a href="#chapter-08">次へ：Team Report →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-08" aria-labelledby="c08"><header><p>08 / TEAM REPORT</p><h2 id="c08">Team Report</h2></header>
+          <p class="chapter-lead">Team Reportは、チームの傾向と次の試合に向けた材料を整理する分析資料です。試合記録資料とは目的が異なります。</p>
+          <div class="report-index"><span>MATCH OVERVIEW</span><span>ATTACK</span><span>SHOT MAP / COURSE</span><span>DEFENSE / GOALKEEPER</span><span>PLAYERS SUMMARY</span><span>INSIGHTS / DIAGNOSIS</span><span>NEXT GAME FOCUS</span></div>
+          <ul class="guide-list"><li>試合概要、主要指標、時間帯別得点</li><li>攻撃、シュート位置・コース</li><li>守備、GK、選手別サマリー</li><li>INSIGHTS / DIAGNOSIS、NEXT GAME FOCUS</li><li>TO → FASTBREAK分析</li></ul>
+          <p>PDF PreviewはFREEでも確認できます。PDFファイル保存はPROで利用できます。開き方と保存操作は確認後に追記します。</p>
+          <figure class="guide-media-slot" data-planned-image="team-report/open-and-navigation.png" hidden></figure><figure class="guide-media-slot" data-planned-image="team-report/pdf-preview-save.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-07">← 前へ</a><a href="#chapter-09">次へ：Career Report →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-09" aria-labelledby="c09"><header><p>09 / CAREER REPORT</p><h2 id="c09">Career Report</h2></header>
+          <p class="chapter-lead">選手個人の記録を複数試合にわたって確認する分析資料です。CPとGKで専用レイアウトを使用します。</p>
+          <h3>対象を選ぶ</h3><p>選手を選択し、全試合、期間指定、または試合選択で集計対象を決めます。正式なフィルター操作は確認待ちです。</p>
+          <div class="career-columns"><article><span>CP CAREER REPORT</span><h3>コートプレーヤー</h3><p>GOAL、SHOT、SHOT%、TO、SHOT POSITION、SHOT TYPE、COURSE、POSITION × TYPE、POSITION × COURSE、Feedback。</p></article><article><span>GK CAREER REPORT</span><h3>ゴールキーパー</h3><p>SA、SAVE、GOAL、SAVE%、被SHOT POSITION、通常COURSE、7M COURSE、POSITION × COURSE、Feedback。</p></article></div>
+          <p>COURSEはシューターから見た方向です。PDF PreviewはFREE、PDFファイル保存はPROで利用できます。</p>
+          <figure class="guide-media-slot" data-planned-image="career-report/player-and-range-selection.png" hidden></figure><figure class="guide-media-slot" data-planned-image="career-report/cp-report.png" hidden></figure><figure class="guide-media-slot" data-planned-image="career-report/gk-report.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-08">← 前へ</a><a href="#chapter-10">次へ：試合記録レポート →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-10" aria-labelledby="c10"><header><p>10 / MATCH RECORD</p><h2 id="c10">試合記録レポート</h2></header>
+          <p class="chapter-lead">1試合の事実を記録資料として確認するレポートです。分析資料であるTeam Reportとは役割が異なります。</p>
+          <div class="term-grid"><article><strong>試合概要</strong><p>対戦、スコア、大会名、会場。</p></article><article><strong>選手記録</strong><p>7M、FIELD GOALを含む選手別記録。</p></article><article><strong>GK記録</strong><p>SAVE / SA、SAVE%など。</p></article><article><strong>罰則・中断</strong><p>警告、退場、失格、タイムアウト。</p></article><article><strong>Running Score</strong><p>得点の時系列記録。</p></article><article><strong>PDF</strong><p>PreviewはFREE、保存はPRO。</p></article></div>
+          <p>レポートを開く入口、ページ移動、保存先指定は実操作確認後に追記します。</p>
+          <figure class="guide-media-slot" data-planned-image="match-report/open-report.png" hidden></figure><figure class="guide-media-slot" data-planned-image="match-report/preview-and-save.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-09">← 前へ</a><a href="#chapter-11">次へ：Backup / Restore →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-11" aria-labelledby="c11"><header><p>11 / DATA MANAGEMENT</p><h2 id="c11">Backup / Restore</h2></header>
+          <p class="chapter-lead">Backupはアプリのデータを保存する仕組み、Restoreは作成済みBackupをアプリへ復元する機能です。</p>
+          <div class="guide-warning"><strong>重要</strong><p>DBファイルを直接コピー・編集せず、必ずアプリのBackup / Restoreを使用してください。Restore前に現在のデータをBackupし、復元後にデータ整合性を確認してください。</p></div>
+          <ol class="step-list"><li><span>STEP 1</span><div><h3>手動Backup</h3><p>アプリのBackup機能から保存します。保存場所の正式操作は確認待ちです。</p></div></li><li><span>STEP 2</span><div><h3>自動Backup</h3><p>自動Backupがあります。作成タイミング、保存世代、保存場所は確認後に追記します。</p></div></li><li><span>STEP 3</span><div><h3>Restore前Backup</h3><p>復元前の状態へ戻せるよう、現在のデータを手動Backupします。</p></div></li><li><span>STEP 4</span><div><h3>Restore</h3><p>対象Backupを選びます。処理中はアプリ終了やPCの電源断を避けてください。</p></div></li><li><span>STEP 5</span><div><h3>整合性確認</h3><p>DB整合性確認を実行し、チーム、選手、試合を確認します。</p></div></li></ol>
+          <h3>別PCへ移動</h3><p>移行元PCでBackupを作成し、ファイルを安全に移して、移行先のアプリからRestoreします。内部DBを直接移動しないでください。</p>
+          <div class="guide-note"><strong>互換性確認待ち</strong><p>DB Schema 19を使用しています。異なるアプリバージョン間のRestore可否と警告は確認後に追記します。</p></div>
+          <figure class="guide-media-slot" data-planned-image="backup-restore/manual-backup.png" hidden></figure><figure class="guide-media-slot" data-planned-image="backup-restore/restore-and-integrity-check.png" hidden></figure>
+          <nav class="chapter-nav"><a href="#chapter-10">← 前へ</a><a href="#chapter-12">次へ：FREE / PRO →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-12" aria-labelledby="c12"><header><p>12 / PLANS</p><h2 id="c12">FREE / PRO</h2></header>
+          <p class="chapter-lead">分析機能の範囲は同じです。保存できる試合数とPDFファイル保存が主な違いです。</p>
+          <div class="guide-plan-grid"><article><header><span>FREE</span><strong>¥0</strong></header><ul><li>保存できる試合は1試合</li><li>PDF Preview可能</li><li>PDFファイル保存不可</li><li>Team Report、Career Report、リアルタイム分析、Backup / Restoreを含むその他の機能を利用可能</li></ul></article><article class="pro"><header><span>PRO</span><strong>¥5,000<small>/月</small></strong></header><ul><li>試合保存数無制限</li><li>PDF Preview可能</li><li>PDFファイル保存可能</li><li>すべての機能を利用可能</li></ul></article></div>
+          <div class="guide-note"><strong>PROからFREEになった場合</strong><p>既存試合を自動削除しない方針です。上限到達時の新規試合作成などの具体的挙動は確認後に追記します。</p></div>
+          <p class="plan-status">PROはMicrosoft Storeの月額Subscriptionとして販売予定です。現在は販売を開始していません。</p>
+          <nav class="chapter-nav"><a href="#chapter-11">← 前へ</a><a href="#chapter-13">次へ：困ったとき →</a></nav>
+        </section>
+
+        <section class="guide-chapter" id="chapter-13" aria-labelledby="c13"><header><p>13 / TROUBLESHOOTING</p><h2 id="c13">困ったとき</h2></header>
+          <div class="faq-list"><details><summary>新しい試合を作成できない</summary><p>FREEで保存できる試合は1試合です。保存済み試合数とプランを確認してください。その他は確認後に追記します。</p></details><details><summary>PDFを保存できない</summary><p>FREEはPDF Previewのみです。PDFファイル保存はPROの機能で、現在販売開始前です。</p></details><details><summary>入力を間違えた／過去の試合を修正したい</summary><p>直前はUndo、過去や終了済み試合は履歴編集を使用し、修正後に集計を確認します。</p></details><details><summary>Backupを作成したい</summary><p>アプリのBackup機能を使用し、DBファイルを直接コピー・編集しないでください。</p></details><details><summary>別PCへ移したい／Restoreしたい</summary><p>移行元でBackup、移行先でRestoreし、Restore前Backupと復元後の整合性確認を行います。</p></details><details><summary>データ整合性を確認したい</summary><p>アプリのDB整合性確認を使用します。正式な操作経路は確認後に追記します。</p></details><details><summary>アプリが起動しない</summary><p>PCを再起動して確認してください。正式な修復手順はサポート内容確定後に追加します。</p></details><details><summary>問い合わせたい</summary><p>お問い合わせ窓口は準備中です。正式決定後にこのページへ追加します。</p></details></div>
+          <div class="guide-end"><p>最新アプリの実操作とスクリーンショットを確認しながら更新します。</p><a href="#top">ページ上部へ戻る ↑</a></div>
+          <nav class="chapter-nav"><a href="#chapter-12">← 前へ</a><a href="../">製品ページへ →</a></nav>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><div><a class="wordmark footer-mark" href="../../"><img src="../../brand/nunoken-logo-reverse.svg" alt="nunoken" width="560" height="140"></a><p>Sports analysis software.</p></div><div class="footer-product"><small>PRODUCT</small><a href="../">Handball Analyzer</a><a href="./" aria-current="page">操作ガイド</a></div><div class="footer-future"><small>UPCOMING</small><span>Support</span><span>Privacy</span><span>Terms</span></div></div><div class="container footer-bottom"><span>© <span data-year>2026</span> nunoken</span><span>Official user guide.</span></div></footer>
+</body>
+</html>
