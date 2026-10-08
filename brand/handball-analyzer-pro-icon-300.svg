@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Handball Analyzer PRO icon</title>
+  <desc id="desc">nunoken Trace symbol in white and lime on a dark square.</desc>
+  <rect width="300" height="300" rx="42" fill="#111314"/>
+  <g transform="translate(42 42) scale(1.35)">
+    <path d="M25 117V78C25 62 35 52 50 52C66 52 76 62 76 78V92C76 108 86 118 102 118C118 118 129 107 129 91V40" fill="none" stroke="#ffffff" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="25" cy="117" r="9" fill="#c8ff2e"/>
+    <circle cx="76" cy="92" r="9" fill="#c8ff2e"/>
+    <circle cx="129" cy="40" r="9" fill="#c8ff2e"/>
+  </g>
+</svg>
