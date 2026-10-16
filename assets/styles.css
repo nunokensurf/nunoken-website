@@ -258,7 +258,7 @@ svg { display: block; }
 .sales-hero { position:relative; overflow:hidden; padding:86px 0 72px; color:#fff; background:radial-gradient(circle at 78% 18%,#123f72 0,#071c35 34%,#041225 74%); }
 .sales-hero::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.18; background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px); background-size:42px 42px; mask-image:linear-gradient(to bottom,#000,transparent); }
 .sales-hero-grid { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0,.88fr) minmax(460px,1.12fr); align-items:center; gap:64px; }
-.sales-hero h1 { margin:18px 0 22px; max-width:760px; font-size:clamp(43px,5.6vw,76px); line-height:1.08; letter-spacing:-.055em; }
+.sales-hero h1 { margin:18px 0 22px; max-width:760px; font-size:clamp(36px,4.4vw,60px); line-height:1.12; letter-spacing:-.045em; }
 .sales-hero .hero-lead { max-width:680px; color:#dce9f6; }
 .hero-badges,.cta-row { display:flex; flex-wrap:wrap; gap:10px; }
 .hero-badges span { padding:7px 12px; border:1px solid #6fbdf866; border-radius:999px; color:#bfe4ff; background:#0b2e52; font-size:12px; font-weight:700; }
@@ -351,7 +351,7 @@ svg { display: block; }
   .plan-actions { align-items:flex-start; flex-direction:column; }
 }
 @media (max-width:440px) {
-  .sales-hero h1 { font-size:42px; }
+  .sales-hero h1 { font-size:34px; }
   .sales-hero-visual { margin-inline:-8px; padding:8px; }
   .problem-grid,.sales-flow { grid-template-columns:1fr; }
   .sales-flow li::after { display:none !important; }
