@@ -255,6 +255,7 @@ svg { display: block; }
 
 /* Handball Analyzer sales page */
 .sales-page { background:#f5f7f9; }
+.language-switch { padding:7px 11px; border:1px solid #7fd2ff55; border-radius:999px; color:#bfe4ff !important; }
 .sales-hero { position:relative; overflow:hidden; padding:86px 0 72px; color:#fff; background:radial-gradient(circle at 78% 18%,#123f72 0,#071c35 34%,#041225 74%); }
 .sales-hero::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.18; background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px); background-size:42px 42px; mask-image:linear-gradient(to bottom,#000,transparent); }
 .sales-hero-grid { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0,.88fr) minmax(460px,1.12fr); align-items:center; gap:64px; }
@@ -274,6 +275,22 @@ svg { display: block; }
 .sales-hero-visual { position:relative; padding:16px; border:1px solid #7fd2ff55; background:#03101faa; box-shadow:0 32px 80px #0008; }
 .sales-hero-visual img { display:block; width:100%; height:auto; }
 .problem-section,.sales-feature-section,.use-flow-section,.sales-report-section,.comparison-section,.data-trust-section,.sales-faq-section { padding:88px 0; }
+.release-section,.language-section { padding:88px 0; }
+.release-section { background:#edf3f8; }
+.release-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:42px; }
+.release-grid article { min-height:245px; padding:28px; border-top:4px solid #1687e0; background:#fff; box-shadow:0 14px 36px #15304912; }
+.release-grid article > span { color:#1675ce; font:700 11px/1 monospace; letter-spacing:.08em; }
+.release-grid h3 { margin:24px 0 12px; font-size:19px; line-height:1.45; }
+.release-grid p { margin:0; color:#52606a; font-size:13px; line-height:1.8; }
+.release-note { margin:20px 0 0; color:#65717c; font-size:11px; line-height:1.7; }
+.language-section { color:#fff; background:linear-gradient(135deg,#071a30,#0b345d); }
+.language-panel { display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; align-items:start; }
+.language-panel h2 { margin:16px 0 0; font-size:clamp(34px,4vw,58px); line-height:1.2; letter-spacing:-.04em; }
+.language-panel p { margin:0 0 28px; color:#c5d6e5; line-height:1.85; }
+.language-panel ul { display:grid; gap:1px; margin:0 0 28px; padding:1px; background:#31506b; list-style:none; }
+.language-panel li { display:flex; justify-content:space-between; gap:24px; padding:18px 20px; background:#0c223c; }
+.language-panel li strong { color:#7fd2ff; }
+.language-panel li span { color:#b8c7d5; text-align:right; }
 .problem-section { background:#fff; }
 .problem-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:42px; background:#dce1e6; border:1px solid #dce1e6; }
 .problem-grid li { min-height:160px; padding:28px; color:#2d3338; background:#fff; font-size:16px; line-height:1.7; list-style:none; }
@@ -336,11 +353,12 @@ svg { display: block; }
   .sales-hero-visual { max-width:820px; }
   .sales-flow { grid-template-columns:repeat(3,1fr); }
   .sales-flow li:nth-child(3)::after { display:none; }
+  .release-grid { grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:760px) {
   .sales-hero { padding:62px 0 52px; }
-  .problem-section,.sales-feature-section,.use-flow-section,.sales-report-section,.comparison-section,.data-trust-section,.sales-faq-section { padding:64px 0; }
-  .problem-grid,.feature-card-grid,.report-showcase-grid,.data-trust-grid,.faq-layout { grid-template-columns:1fr; }
+  .problem-section,.sales-feature-section,.use-flow-section,.sales-report-section,.comparison-section,.data-trust-section,.sales-faq-section,.release-section,.language-section { padding:64px 0; }
+  .problem-grid,.feature-card-grid,.report-showcase-grid,.data-trust-grid,.faq-layout,.language-panel { grid-template-columns:1fr; }
   .feature-card-wide { grid-column:auto; grid-template-columns:1fr; }
   .feature-card-wide img,.feature-card img { min-height:0; height:auto; }
   .sales-flow { grid-template-columns:repeat(2,1fr); }
@@ -348,12 +366,16 @@ svg { display: block; }
   .sales-flow li:nth-child(even)::after { display:none; }
   .report-showcase-grid img { height:auto; }
   .data-trust-grid,.faq-layout { gap:34px; }
+  .language-panel { gap:34px; }
   .plan-actions { align-items:flex-start; flex-direction:column; }
 }
 @media (max-width:440px) {
   .sales-hero h1 { font-size:34px; }
   .sales-hero-visual { margin-inline:-8px; padding:8px; }
-  .problem-grid,.sales-flow { grid-template-columns:1fr; }
+  .problem-grid,.sales-flow,.release-grid { grid-template-columns:1fr; }
+  .release-grid article { min-height:0; }
+  .language-panel li { align-items:flex-start; flex-direction:column; gap:6px; }
+  .language-panel li span { text-align:left; }
   .sales-flow li::after { display:none !important; }
   .cta-row .button,.cta-row .text-cta { width:100%; }
 }
