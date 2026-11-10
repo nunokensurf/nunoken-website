@@ -129,13 +129,21 @@
   add("Match, team and player data are stored locally on your PC. Backup and restore tools are included.", "Les données de match, d’équipe et de joueurs sont stockées localement sur votre PC. Les outils de sauvegarde et restauration sont inclus.", "Spiel-, Team- und Spielerdaten werden lokal auf Ihrem PC gespeichert. Sicherungs- und Wiederherstellungsfunktionen sind enthalten.", "Los datos de partidos, equipos y jugadores se guardan localmente en tu PC. Incluye herramientas de copia y restauración.");
   add("Is an internet connection required?", "Une connexion Internet est-elle nécessaire ?", "Ist eine Internetverbindung erforderlich?", "¿Se necesita conexión a Internet?");
   add("Recording and local analysis work on your PC. Microsoft Store connectivity is required for installation, PRO purchase and licence refresh or restore.", "La saisie et l’analyse locale fonctionnent sur votre PC. Une connexion à Microsoft Store est nécessaire pour l’installation, l’achat de PRO et l’actualisation ou la restauration de la licence.", "Erfassung und lokale Analyse funktionieren auf Ihrem PC. Für Installation, PRO-Kauf sowie Lizenzaktualisierung oder -wiederherstellung ist eine Verbindung zum Microsoft Store erforderlich.", "El registro y análisis local funcionan en tu PC. Se necesita conexión con Microsoft Store para instalar, comprar PRO y actualizar o restaurar la licencia.");
-  add("Which platforms are supported?", "Quelles plateformes sont prises en charge ?", "Welche Plattformen werden unterstützt?", "¿Qué plataformas son compatibles?");
-  add("Windows 10 and Windows 11 are supported. A smartphone version is not currently available.", "Windows 10 et Windows 11 sont pris en charge. Aucune version pour smartphone n’est actuellement disponible.", "Windows 10 und Windows 11 werden unterstützt. Eine Smartphone-Version ist derzeit nicht verfügbar.", "Es compatible con Windows 10 y Windows 11. Actualmente no hay versión para smartphone.");
   add("Try your first match free.", "Essayez gratuitement votre premier match.", "Testen Sie Ihr erstes Spiel kostenlos.", "Prueba gratis tu primer partido.");
   add("Install Handball Analyzer and explore match recording, live analysis, team and player reports, and PDF preview.", "Installez Handball Analyzer et découvrez la saisie de matchs, l’analyse en direct, les rapports d’équipe et de joueurs et l’aperçu PDF.", "Installieren Sie Handball Analyzer und entdecken Sie Spielerfassung, Live-Analyse, Team- und Spielerberichte sowie PDF-Vorschau.", "Instala Handball Analyzer y descubre el registro, el análisis en directo, los informes de equipo y jugadores y la vista previa de PDF.");
   add("Install from Microsoft Store", "Installer depuis Microsoft Store", "Im Microsoft Store installieren", "Instalar desde Microsoft Store");
   add("Privacy Policy", "Politique de confidentialité", "Datenschutzerklärung", "Política de privacidad");
   add("Select language", "Choisir la langue", "Sprache auswählen", "Elegir idioma");
+
+  add("Support", "Assistance", "Support", "Soporte");
+  add("Handball Analyzer support", "Assistance Handball Analyzer", "Support für Handball Analyzer", "Soporte de Handball Analyzer");
+  add("Installation and purchases", "Installation et achats", "Installation und Käufe", "Instalación y compras");
+  add("For help with the Windows app, see the support information on the Microsoft Store product page.", "Pour obtenir de l’aide sur l’application Windows, consultez les informations d’assistance sur la page du produit dans le Microsoft Store.", "Hilfe zur Windows-App finden Sie in den Supportinformationen auf der Produktseite im Microsoft Store.", "Para obtener ayuda con la aplicación de Windows, consulta la información de soporte en la página del producto en Microsoft Store.");
+  add("Apple version", "Version Apple", "Apple-Version", "Versión para Apple");
+  add("Details about the Apple release will be posted here once confirmed.", "Les informations sur la sortie de la version Apple seront publiées ici une fois confirmées.", "Sobald die Angaben zur Veröffentlichung der Apple-Version feststehen, erscheinen sie hier.", "Los detalles sobre el lanzamiento de la versión para Apple se publicarán aquí cuando estén confirmados.");
+  add("Which versions of Windows are supported?", "Quelles versions de Windows sont prises en charge ?", "Welche Windows-Versionen werden unterstützt?", "¿Qué versiones de Windows son compatibles?");
+  add("Windows 10 and Windows 11 are supported.", "Windows 10 et Windows 11 sont pris en charge.", "Windows 10 und Windows 11 werden unterstützt.", "Es compatible con Windows 10 y Windows 11.");
+  add("Handball Analyzer FAQ", "FAQ de Handball Analyzer", "Häufige Fragen zu Handball Analyzer", "Preguntas frecuentes sobre Handball Analyzer");
 
   const translateText = (root) => {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
@@ -163,5 +171,9 @@
     de: "nunoken — Aus Aufzeichnungen wird Verständnis.",
     es: "nunoken — Convierte los registros en comprensión."
   };
+  if (document.body.classList.contains("support-page")) {
+    document.title = `${dictionary["Handball Analyzer support"][language]} | nunoken`;
+    return;
+  }
   document.title = document.body.classList.contains("product-page") ? productTitles[language] : homeTitles[language];
 })();
