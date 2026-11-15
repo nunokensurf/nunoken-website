@@ -162,9 +162,9 @@
   document.querySelectorAll("[data-language-picker]").forEach((select) => select.setAttribute("aria-label", labels[language]));
 
   const productTitles = {
-    fr: "Handball Analyzer | Analyse de match de handball pour Windows | nunoken",
-    de: "Handball Analyzer | Handball-Spielanalyse für Windows | nunoken",
-    es: "Handball Analyzer | Análisis de balonmano para Windows | nunoken"
+    fr: "Handball Analyzer | Analyse de match de handball pour Windows, Mac et iPad | nunoken",
+    de: "Handball Analyzer | Handball-Spielanalyse für Windows, Mac und iPad | nunoken",
+    es: "Handball Analyzer | Análisis de balonmano para Windows, Mac y iPad | nunoken"
   };
   const homeTitles = {
     fr: "nunoken — Transformer les données en compréhension.",

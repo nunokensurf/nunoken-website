@@ -384,3 +384,39 @@ svg { display: block; }
   .sales-flow li::after { display:none !important; }
   .cta-row .button,.cta-row .text-cta { width:100%; }
 }
+
+/* Apple release information on the product pages. */
+.product-identity { display:flex; align-items:center; gap:12px; }
+.product-identity img { border-radius:12px; flex:none; }
+.button-apple { background:#53c7f5; color:#071629; border:1px solid #53c7f5; }
+.button-apple:hover { background:#89dcfc; }
+.platform-section { background:#071629; color:#edf6ff; }
+.platform-section .section-index { color:#ffad58; }
+.apple-device-grid { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:32px; align-items:start; margin-top:32px; }
+.apple-device-grid figure { margin:0; padding:20px; border:1px solid #27445f; border-radius:18px; background:#0c1d30; min-width:0; }
+.apple-device-grid img { display:block; width:100%; height:auto; border-radius:8px; }
+.apple-device-grid figure:nth-child(2) img { max-height:450px; object-fit:contain; }
+.apple-device-grid figcaption { margin:16px 0; color:#cce9f8; }
+.platform-note { color:#b5c8d7; font-size:14px; line-height:1.8; margin-top:24px; }
+.platform-section a { color:#75d5fb; }
+.purchase-conditions { padding:28px 0; background:#eef4f8; color:#172c40; line-height:1.9; }
+.cta-row { flex-wrap:wrap; }
+.cta-row .button { white-space:normal; text-align:center; }
+@media(max-width:700px) {
+ .apple-device-grid { grid-template-columns:minmax(0,1fr); gap:20px; }
+ .product-kicker { flex-wrap:wrap; gap:16px; }
+ .cta-row .button { width:100%; }
+ .apple-device-grid figure { padding:14px; }
+}
+
+html[lang="ja"] .sales-hero h1 { font-size:clamp(28px,3.2vw,46px); line-height:1.35; }
+html[lang="ja"] .sales-hero h1 span { display:inline-block; }
+.product-kicker > span:last-child { color:#b7d1e4; }
+.plan-actions .button { margin:8px 8px 0 0; white-space:normal; text-align:center; }
+
+@media(max-width:700px) {
+ .comparison-table { min-width:0; width:100%; table-layout:fixed; font-size:13px; }
+ .comparison-table th, .comparison-table td { padding:14px 8px; overflow-wrap:anywhere; }
+ .comparison-table th:first-child { width:38%; }
+ .comparison-table th:not(:first-child) { width:31%; }
+}
