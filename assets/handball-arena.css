@@ -1,0 +1,57 @@
+.arena-product .sales-hero {
+  background: radial-gradient(ellipse at 82% 24%, #5c3123, #251b1a 44%, #151317 78%);
+}
+
+.arena-product .sales-hero .sales-hero-copy h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.04;
+}
+
+.arena-product .sales-hero .hero-lead { margin: 22px 0 0; color: #f0e2d8; }
+.arena-product .sales-hero .eyebrow { color: #ffba85; }
+.arena-product .store-note { margin-top: 24px; color: #e6d4cb; font-size: 13px; }
+.arena-product .store-note strong { display: inline-block; margin-bottom: 4px; color: #ffba85; }
+.arena-product .button:not(.button-secondary) { color: #24160f; background: #ffba85; }
+.arena-product .button:not(.button-secondary):hover { background: #ffd1ad; }
+.arena-language { flex-shrink: 0; padding: 10px; font-size: 14px; text-underline-offset: 5px; }
+
+.arena-product .sales-hero-visual {
+  margin: 0;
+  border-color: #d3835966;
+  background: #170e13;
+}
+
+.arena-product figcaption { margin-top: 10px; font-size: 13px; line-height: 1.55; }
+.arena-product .sales-hero-visual figcaption { color: #e6d4cb; }
+
+.arena-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.arena-cards article { padding: clamp(18px, 3vw, 32px); border: 1px solid var(--line); background: var(--white); }
+.arena-cards h3 { margin: 0 0 12px; font-size: clamp(17px, 2.1vw, 24px); line-height: 1.35; }
+.arena-cards p, .arena-modes dd { margin: 0; color: #505453; line-height: 1.75; }
+.arena-events { background: #20171b; }
+.arena-events .arena-cards article { border-color: #5d4245; background: #2b2026; }
+.arena-events .arena-cards h3 { color: #ffba85; }
+.arena-events .arena-cards p, .arena-product .arena-events .section-heading > p { color: #e9d8d4; }
+
+.arena-friends-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: clamp(24px, 5vw, 64px);
+}
+
+.arena-modes { margin: 0; }
+.arena-modes > div { padding: 16px 0; border-top: 1px solid var(--line); }
+.arena-modes dt { margin-bottom: 6px; font-size: 18px; font-weight: 700; }
+.arena-menu-screen { margin: 0; }
+.arena-menu-screen img { display: block; width: 100%; height: auto; }
+.arena-menu-screen figcaption { color: #505453; }
+
+@media (max-width: 760px) {
+  .arena-cards, .arena-friends-grid { grid-template-columns: minmax(0, 1fr); }
+}
