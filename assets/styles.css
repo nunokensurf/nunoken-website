@@ -69,6 +69,16 @@ svg { display: block; }
 .product-showcase { background: var(--white); }
 .section-heading { display: grid; grid-template-columns: 1.5fr 1fr; gap: 70px; align-items: end; margin-bottom: clamp(48px, 7vw, 88px); }
 .section-heading > p { margin: 0; color: #606463; line-height: 1.9; }
+.arena-release-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: center; gap: clamp(24px, 5vw, 72px); }
+.arena-release h2 { margin: 0; font-size: clamp(34px, 4.2vw, 58px); font-weight: 560; line-height: 1.14; letter-spacing: -.05em; }
+.arena-release-copy > p:not(.eyebrow) { margin-block: 16px 0; line-height: 1.8; }
+.arena-release-screens { display: grid; gap: 16px; }
+.arena-release-screens figure { margin: 0; min-width: 0; }
+.arena-release-screens img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.arena-release-screens figcaption { margin-top: 6px; color: var(--muted); font-size: 13px; }
+.arena-release-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: 24px; }
+.arena-release-links .hero-guide-link { margin-top: 0; }
+.arena-release-links .hero-guide-link:hover { color: var(--ink); border-color: var(--ink); }
 .product-card { display: grid; grid-template-columns: 1.3fr .7fr; color: var(--white); background: var(--ink); text-decoration: none; transition: transform .25s ease, box-shadow .25s ease; }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 22px 50px #1112; }
 .product-card-copy { padding: clamp(30px, 5vw, 68px); }
@@ -214,7 +224,7 @@ svg { display: block; }
 @media (max-width: 760px) {
   :root { --pad: 20px; }
   .header-inner { min-height: 66px; }.wordmark img { width: 138px; }.site-nav { gap:16px; overflow-x:auto; }.site-nav .nav-future { display:none; }
-  .brand-hero { min-height:auto; }.brand-hero-grid, .product-hero-grid, .section-heading, .statement-grid, .data-grid { grid-template-columns:1fr; }
+  .brand-hero { min-height:auto; }.brand-hero-grid, .product-hero-grid, .section-heading, .statement-grid, .data-grid, .arena-release-grid { grid-template-columns:1fr; }
   .brand-hero-grid { gap:64px; }.product-hero-grid { gap:42px; }.hero-copy h1 { font-size:clamp(38px,10.5vw,52px); }.product-hero .hero-copy h1 { font-size:clamp(40px,11vw,54px); }.hero-lead { margin-block:24px 28px; font-size:15px; line-height:1.75; }
   .data-visual { margin-inline:-8px; }.metric-row strong { font-size:22px; }
   .statement-grid { gap:36px; }.statement-grid div > p { margin-top:28px; }.section-heading { gap:28px; }
